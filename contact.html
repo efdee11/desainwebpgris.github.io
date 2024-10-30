@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman 4</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: black;
+        color: white;
+      }
+
+      header {
+        width: 100%;
+        height: 60px;
+        background-color: #333;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+      }
+
+      .logo {
+        margin-left: 40px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .logo span {
+        color: #ff634f;
+        font-size: 30px;
+      }
+
+      .nav-links {
+        margin-right: 30px;
+        display: flex;
+        gap: 20px;
+      }
+
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        transition: color 0.3s;
+      }
+
+      .contact {
+        padding: 80px 50px 20px;
+      }
+
+      .contact h2 {
+        font-size: 30px;
+        border-bottom: 2px solid white;
+        padding-bottom: 3px;
+        display: inline-block;
+      }
+
+      .contact span {
+        color: rgb(164, 85, 0);
+        font-size: 40px;
+      }
+
+      .contact p {
+        font-size: 15px;
+        margin-top: 10px;
+      }
+
+      .map {
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+      }
+
+      #input-group {
+        margin: 15px 0;
+        display: flex;
+        align-items: center;
+      }
+
+      #input-group input {
+        flex: 1;
+        padding: 10px;
+        margin-left: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: blue;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+
+      footer {
+        margin-top: 20px;
+        width: 100%;
+        height: 50px;
+        background-color: #333;
+        color: #ff6347;
+        padding: 10px;
+        text-align: center;
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo"><span>KOPI</span> MALABAR</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="profil.html">Profil</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section id="contact" class="contact">
+      <h2><span>Kontak</span> Kami</h2>
+      <p>
+        Berikan saran untuk menjadi bagian dari terbentuknya sejarah kami dalam
+        meningkatkan kualitas :)
+      </p>
+
+      <div id="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.461817275727!2d108.86066657475736!3d-6.954723693045577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fa78bff5cbd45%3A0x4dc34b88a4bf9596!2sFaris%20Motor!5e0!3m2!1sid!2sid!4v1730079739759!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+        <form action="">
+          <div id="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="Nama" required />
+          </div>
+          <div id="input-group">
+            <i data-feather="mail"></i>
+            <input type="email" placeholder="E-mail" required />
+          </div>
+          <div id="input-group">
+            <i data-feather="phone"></i>
+            <input type="tel" placeholder="No HP" required />
+          </div>
+          <div type="submit" class="btn">Kirim Pesan</div>
+          <textarea
+            name="massege"
+            rows="4"
+            placeholder="Tuliskan saran anda disini....."
+            style="
+              width: 100%;
+              padding: 10px;
+              margin-top: 10px;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+            "
+          ></textarea>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 kopimalabar&sundanese</p>
+    </footer>
+  </body>
+</html>
